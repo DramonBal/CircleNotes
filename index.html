@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circle Note PDF</title>
+  <style>
+    /* General Styles for Viewing in Browser */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+  
+    /* The Circular Note Styling */
+    .circle-note {
+        width: 300px;
+        height: 300px;
+        background-color: #ffeb3b; /* Yellow note color */
+        border-radius: 50%; /* Makes it a circle */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+        box-sizing: border-box; /* Ensures padding doesn't affect size */
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+        border: 2px solid #fbc02d;
+        font-size: 18px;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    /* Print Specific Styles for PDF */
+    @media print {
+        body {
+            background-color: white;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .circle-note {
+            box-shadow: none;
+            border: 2px solid #000; /* Darker border for printing */
+            /* Ensure colors print */
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        /* Hide UI elements if necessary */
+        button {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="circle-note">
+                 <div class="textarea-container">                 
+                <textarea id="responsive-textarea" placholder=Start typing here..."></textarea> 
+             
+              <textarea id="responsive-textarea" placholder=Start typing here..."></textarea> 
+              
+               <textarea id="responsive-textarea" placholder=Start typing here..."></textarea>                
+          
+                         
+      </div>
+
+</body>
+</html>
