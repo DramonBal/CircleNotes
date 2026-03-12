@@ -6,6 +6,12 @@ h2 {
   font-weight: bold;  
   text-align: left;
 } 
+h3 {
+  text-transform: lowercase;
+  font-size: 1rem;
+  font-weight: bold;  
+  text-align: left;
+} 
 
 
 textarea {
@@ -37,4 +43,5 @@ textarea {
    
     /* Optional: allows manual vertical resize, but prevents horizontal */
     resize: auto;
+
 }
